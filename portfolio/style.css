@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+  font-size: large;
+  color: white;
+  font-weight: bolder;
+}
+nav{
+  background: #3a0d30;
+  box-shadow: 0 5px 15px rgba(255,105, 180, 0.6);    
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px, 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover{
+  color: #ff85c1;
+  text-decoration: 1px underline;
+  transform: translateY(2px);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffe0eb, #ffccd5, #ffd1dc);
+  color: #3a0d30;
+  line-height: 1.6;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4, #ff69b4);
+  color: #fff;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease-in-out;
+  height: 80vh;
+  align-content: center;
+}
+
+header:hover {
+  box-shadow: 0 0 35px rgba(255, 105, 180, 0.6);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 0 20px #ff69b4;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.profile-info h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #d63384;
+}
+
+.profile-info a {
+  color: #fff0f5;
+  text-decoration: solid;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+
+.profile-info a:hover {
+  color: #d63384;
+}
+
+.profile-info i {
+  margin-right: 6px;
+  color: #ffe6f0;
+}
+
+header p {
+  margin: 8px 0;
+  font-size: 1.05em;
+}
+
+main{
+  max-width: 900px;
+  padding: 20px;
+  margin: auto;
+}
+
+
+main section {
+  background: linear-gradient(to bottom right, #ffffff, #ffd6e8);
+  border-left: 6px solid #ff69b4;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+  transition: all 0.3s ease;
+}
+
+main section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(121, 51, 86, 0.35);
+}
+
+
+main h2 {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+  color: #d63384;
+  position: relative;
+  text-align: center;
+}
+
+.abouts p{
+  text-indent: 2rem;
+}
+
+main h2::after {
+  justify-self: center;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ff69b4;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: disc inside;
+  padding-left: 10px;
+}
+
+ul li {
+  margin-bottom: 12px;
+  font-size: 1.05em;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skills-category {
+  flex: 1;
+  min-width: 220px;
+}
+
+.skills-category h3 {
+  color: #ff1493;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff69b4;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-category li {
+  margin-bottom: 10px;
+  align-items: left;
+  gap: 10px;
+  background-color: #ff85c1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #3a0d30;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(255, 105, 180, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.skills-category li:hover {
+  background-color: #ffb6c1;
+  transform: translateX(5px);
+}
+
+.skills-category i {
+  color: #d63384;
+  font-size: 1.2em;
+}
+
+.certificate-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,ifr));
+    gap: 2rem;
+}
+
+.certificate-item{
+    background: #ffb6c1;
+    border-radius: 7px;
+    padding: 1.5rem;
+    text-align: center;
+    
+}
+
+.certificate-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(102, 41, 72, 0.15);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 720px) {
+  .profile-header {
+    flex-direction: column;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  nav ul{
+    display: none;
+  }
+} 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff69b4;
+  border-radius: 6px;
+}
+
+a {
+  color: #af5e79;
+  text-decoration: solid;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+footer{
+  background-color: #3a0d30;
+  color: #ffe0eb ;
+}
+
+footer div{
+  margin: auto;
+  text-align: center;
+}
+
+/* no way im making a class for a single link */
+
+
+/* @media (max-width: 500px) {
+    .navbar {
+        right: 10px;
+        position: fixed;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }changed my mind lolololololololol
+} */
