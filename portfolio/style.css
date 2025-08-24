@@ -1,18 +1,18 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.title{
+.title {
   font-size: large;
-  color: white;
+  color: #ffb6d1;
   font-weight: bolder;
 }
-nav{
+
+nav {
   background: #3a0d30;
-  box-shadow: 0 5px 15px rgba(255,105, 180, 0.6);    
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.6);
   position: sticky;
   top: 0px;
   z-index: 9999;
@@ -23,7 +23,7 @@ nav{
   padding: 10px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -32,17 +32,17 @@ nav ul{
 }
 
 nav a {
-  color: white;
+  color: #ffb6d1;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px, 16px;
+  padding: 8px 16px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
-nav a:hover{
-  color: #ff85c1;
-  text-decoration: 1px underline;
+nav a:hover {
+  color: #ffd6e8;
+  text-decoration: underline;
   transform: translateY(2px);
 }
 
@@ -121,12 +121,11 @@ header p {
   font-size: 1.05em;
 }
 
-main{
+main {
   max-width: 900px;
   padding: 20px;
   margin: auto;
 }
-
 
 main section {
   background: linear-gradient(to bottom right, #ffffff, #ffd6e8);
@@ -143,7 +142,6 @@ main section:hover {
   box-shadow: 0 12px 30px rgba(121, 51, 86, 0.35);
 }
 
-
 main h2 {
   font-size: 1.7em;
   margin-bottom: 15px;
@@ -152,7 +150,7 @@ main h2 {
   text-align: center;
 }
 
-.abouts p{
+.abouts p {
   text-indent: 2rem;
 }
 
@@ -205,7 +203,7 @@ ul li {
   margin-bottom: 10px;
   align-items: left;
   gap: 10px;
-  background-color: #ff85c1;
+  background-color: #ffe0eb;
   padding: 10px 14px;
   border-radius: 8px;
   color: #3a0d30;
@@ -224,24 +222,23 @@ ul li {
   font-size: 1.2em;
 }
 
-.certificate-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,ifr));
-    gap: 2rem;
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.certificate-item{
-    background: #ffb6c1;
-    border-radius: 7px;
-    padding: 1.5rem;
-    text-align: center;
-    
+.certificate-item {
+  background: #ffb6c1;
+  border-radius: 7px;
+  padding: 1.5rem;
+  text-align: center;
 }
 
-.certificate-item:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(102, 41, 72, 0.15);
-    transition: transform 0.3s ease;
+.certificate-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(102, 41, 72, 0.15);
+  transition: transform 0.3s ease;
 }
 
 @media (max-width: 720px) {
@@ -257,10 +254,11 @@ ul li {
     width: 150px;
     height: 150px;
   }
-  nav ul{
+
+  nav ul {
     display: none;
   }
-} 
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -282,25 +280,32 @@ a {
   transition: color 0.3s ease;
   font-style: italic;
 }
-footer{
-  background-color: #3a0d30;
-  color: #ffe0eb ;
+
+a:hover {
+  color: #7a2e4f;
 }
 
-footer div{
+a:focus,
+a:active {
+  outline: 2px dashed #ff69b4;
+  outline-offset: 4px;
+}
+
+footer {
+  background-color: #3a0d30;
+  color: #fce4ec;
+}
+
+footer div {
   margin: auto;
   text-align: center;
 }
 
-/* no way im making a class for a single link */
+footer a {
+  color: #ffe6f0;
+  text-decoration: underline;
+}
 
-
-/* @media (max-width: 500px) {
-    .navbar {
-        right: 10px;
-        position: fixed;
-    }
-    .navbar ul {
-        flex-direction: column;
-    }changed my mind lolololololololol
-} */
+footer a:hover {
+  color: #ffffff; 
+}
