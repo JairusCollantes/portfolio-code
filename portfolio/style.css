@@ -223,7 +223,7 @@ ul li {
 }
 
 .certificate-grid {
-  display: grid;
+  display: block;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
@@ -233,6 +233,7 @@ ul li {
   border-radius: 7px;
   padding: 1.5rem;
   text-align: center;
+  margin: 20px;
 }
 
 .certificate-item:hover {
