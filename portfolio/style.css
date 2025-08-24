@@ -178,6 +178,7 @@ ul li {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -198,23 +199,30 @@ ul li {
   list-style: none;
   padding: 0;
 }
+.skills-category li i{
+  display: block;
+  font-size: 5rem;
+}
 
 .skills-category li {
+  justify-items: center;
+  display: inline-block;
   margin-bottom: 10px;
-  align-items: left;
+  width: 40%;
+  min-width:300px;
   gap: 10px;
   background-color: #ffe0eb;
   padding: 10px 14px;
   border-radius: 8px;
   color: #3a0d30;
-  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
   box-shadow: 0 3px 8px rgba(255, 105, 180, 0.15);
   transition: background-color 0.3s ease;
 }
 
 .skills-category li:hover {
   background-color: #ffb6c1;
-  transform: translateX(5px);
 }
 
 .skills-category i {
